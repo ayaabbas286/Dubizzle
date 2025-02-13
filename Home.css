@@ -4,15 +4,19 @@
   margin: 0;
 }
 .card-price {
-  font-size: 1em;
+  font-size: 14px;
   font-weight: bold;
   color: #e00;
 }
 .card {
-  width: 19rem !important;
+  width: 17rem !important;
   height: 320px !important;
 }
 
 .card-img-top {
-  height: 160px;
+  height: 150px;
+}
+.card-text{
+font-size: 12px;
+color: rgb(32, 32, 32);
 }
