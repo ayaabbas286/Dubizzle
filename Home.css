@@ -18,5 +18,12 @@
 }
 .card-text{
 font-size: 12px;
+margin-bottom: 2px;
 color: rgb(32, 32, 32);
 }
+/*svg-icons*/
+/* .svg-icon {
+margin-top: 100px !important;
+border:1px solid red;
+background-color: #e00;
+} */
