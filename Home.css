@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
 }
+/* start cards styling*/
 .card-price {
   font-size: 14px;
   font-weight: bold;
@@ -25,14 +26,9 @@
 .time{
   margin-top: -10px;
 }
-.view-more{
-font-size: 14px;
-  color: #e00;
+.view-more a{
+font-size: 12px;
   font-weight: bold !important;
+margin-left: -110px;
 }
-/*svg-icons*/
-/* .svg-icon {
-margin-top: 100px !important;
-border:1px solid red;
-background-color: #e00;
-} */
+/* End start cards styling*/
