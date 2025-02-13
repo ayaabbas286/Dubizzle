@@ -11,16 +11,24 @@
 }
 .card {
   width: 17rem !important;
-  height: 320px !important;
+  height: 310px !important;
 }
 
 .card-img-top {
   height: 150px;
 }
-.card-text{
-font-size: 12px;
-margin-bottom: 2px;
-color: rgb(32, 32, 32);
+.card-text {
+  font-size: 12px;
+  margin-bottom: 2px;
+  color: rgb(32, 32, 32);
+}
+.time{
+  margin-top: -10px;
+}
+.view-more{
+font-size: 14px;
+  color: #e00;
+  font-weight: bold !important;
 }
 /*svg-icons*/
 /* .svg-icon {
