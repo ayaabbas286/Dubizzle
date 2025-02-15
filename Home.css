@@ -3,6 +3,12 @@
   padding: 0;
   margin: 0;
 }
+/*sub title*/
+.title-sub {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 /* start cards styling*/
 .card-price {
   font-size: 14px;
@@ -23,12 +29,19 @@
   margin-bottom: 2px;
   color: rgb(32, 32, 32);
 }
-.time{
+.time {
   margin-top: -10px;
 }
-.view-more a{
-font-size: 12px;
+.view-more a {
+  font-size: 12px;
   font-weight: bold !important;
-margin-left: -110px;
+  margin-left: -110px;
+  color: #e00;
+;
 }
+.fa-chevron-right {
+  margin-left: 5px;
+}
+
+
 /* End start cards styling*/
