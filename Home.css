@@ -2,12 +2,13 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Proxima Nova Condensed", sans-serif;
 }
 /*sub title*/
-.title-sub {
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
+.title-sub h4 {
+  font-size: 20px !important;
+  font-weight: 700;
+  color: rgb(74, 74, 74) !important;
 }
 /* start cards styling*/
 .card-price {
@@ -17,12 +18,13 @@
   margin-bottom: 5px;
 }
 .card {
-  width: 17rem !important;
-  height: 310px !important;
+  width: 15rem !important;
+  height: 285px !important;
+  border: 1px solid #e3e3e39c !important;
 }
 
 .card-img-top {
-  height: 150px;
+  height: 130px;
 }
 .card-text {
   font-size: 12px;
@@ -33,15 +35,28 @@
   margin-top: -10px;
 }
 .view-more a {
-  font-size: 12px;
-  font-weight: bold !important;
-  margin-left: -110px;
-  color: #e00;
-;
+  font-size: 14px;
+  font-weight: 600 !important;
+  color: red;
 }
 .fa-chevron-right {
   margin-left: 5px;
 }
-
-
+.containered {
+  width: 1010px;
+  margin: 0 auto;
+}
 /* End start cards styling*/
+/*job cards styling*/
+.img-job {
+  opacity: 0.5;}
+.Jobs .card-text{
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.jobs .card{
+  height: 140px !important;
+  border: 1px solid red !important;
+}
