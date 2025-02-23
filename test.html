@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Dropdown CSS Start */
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 2px;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12);
+}
+
+.dropdown hr {
+  background-color: #e5e5e5;
+  border: 0;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.dropdown > li {
+  display: block;
+  padding: 0px 22px;
+  clear: both;
+   color: #333;
+  height: 48px;
+  line-height: 48px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.dropdown > li a{
+text-decoration:none;
+  color: #333;
+}
+.dropdown > li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.dropdown-submenu {
+  position: relative;
+  background: url('data:image/svg+xml;utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%23888" d="M10,17L15,12L10,7V17Z"></path></svg>')
+    97% / 24px no-repeat;
+}
+.dropdown-submenu .dropdown {
+  top: 0px;
+  left: 100%;
+  display:block;
+  visibility: hidden;
+  opacity: 0;
+  transition: .4s;
+}
+.dropdown-submenu:hover > .dropdown {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Dropdown CSS End */
+
+
+.parent:active, .parent:focus-within > .dropdown, open.dropdown {
+  display: block;
+  position: relative;
+}
+.menu{
+  height:40px;
+  width:100px;
+  background:#eee;
+  line-height:40px;
+text-align:center;
+  outline:0;
+   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 1px rgba(0, 0, 0, 0.12);
+border-radius:2px;
+  cursor:pointer;
+}
+
+
+h2:hover .parent{
+  display: block;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h4><b>Popular Searches</b></h4>
+    <div id="government">
+    <div class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 py-3 government-height">
+        <div class="product col">  
+            <p class=""><b>Cars for Sale in Egypt</b>
+            </p>
+          <div class="bord">    
+            <a class="popular-search-link" href="#">Cairo</a><br>
+            <a class="popular-search-link" href="#">Alexandria</a><br>
+            <a class="popular-search-link" href="#">Giza</a><br>
+            <a class="popular-search-link" href="#">Sharqia</a><br>
+            <a class="popular-search-link" href="#">Port Said</a><br>
+            <a class="popular-search-link" href="#">Ismailia</a><br>
+            <a class="popular-search-link" href="#">Asyut</a><br>
+            <a class="popular-search-link" href="#">Gharbia</a><br>
+            <a class="popular-search-link" href="#">Dakahlia</a><br>
+            <a class="popular-search-link" href="#">Damietta</a><br>
+            <a class="popular-search-link" href="#">Beheira</a><br>
+            <a class="popular-search-link" href="#">Qalyubia</a><br>
+            <a class="popular-search-link" href="#">Monufia</a><br>
+            <a class="popular-search-link" href="#">Minya</a><br>
+            <a class="popular-search-link" href="#">Fayoum</a><br>
+            <a class="popular-search-link" href="#">Suez</a><br>
+            <a class="popular-search-link" href="#">Beni Suef</a><br>
+            <a class="popular-search-link" href="#">Qena</a><br>
+            <a class="popular-search-link" href="#">Red Sea</a><br>
+            <a class="popular-search-link" href="#">kafr al-Sheikh</a>
+        </div>
+        </div>
+        <div class="product col">
+            <p class=""><b>Apartments for Sale in Egypt</b></p>
+            <div class="bord">
+                <a class="popular-search-link" href="#">6th of October</a><br>
+                <a class="popular-search-link" href="#">Shikh Zayed</a><br>
+                <a class="popular-search-link" href="#">Naser City</a><br>
+                <a class="popular-search-link" href="#">Shorouk City</a><br>
+                <a class="popular-search-link" href="#">Obour City</a><br>
+                <a class="popular-search-link" href="#">Maadi</a><br>
+                <a class="popular-search-link" href="#">Hadayek al-Ahram<a><br>
+                <a class="popular-search-link" href="#">Heliopolis</a><br>
+                <a class="popular-search-link" href="#">Agami</a><br>
+                <a class="popular-search-link" href="#">Mansura</a><br>
+                <a class="popular-search-link" href="#">Tanta</a><br>
+                <a class="popular-search-link" href="#">New cairo</a><br>
+                <a class="popular-search-link" href="#">Mokattam</a><br>
+                <a class="popular-search-link" href="#">Haram</a><br>
+                <a class="popular-search-link" href="#">Smoha</a><br>
+                <a class="popular-search-link" href="#">Hurghada</a><br>
+                <a class="popular-search-link" href="#">Madinaty</a><br>
+                <a class="popular-search-link" href="#">Hadayek al-Kobba<a><br>
+                <a class="popular-search-link" href="#">Faisal</a><br>
+                <a class="popular-search-link" href="#">10th of Ramadan</a>
+            </div>
+          </div>
+        <div class="product col">
+            <p class=""><b>Apartments for Rent in Egypt</b></p>
+            <div class="bord">
+                <a class="popular-search-link" href="#">6th of October</a><br>
+                <a class="popular-search-link" href="#">Nasr City</a><br>
+                <a class="popular-search-link" href="#">Shikh Zayed</a><br>
+                <a class="popular-search-link" href="#">Maadi</a><br>
+                <a class="popular-search-link" href="#">Heliopolis</a><br>
+                <a class="popular-search-link" href="#">Obour City</a><br>
+                <a class="popular-search-link" href="#">Shorouk City</a><br>
+                <a class="popular-search-link" href="#">Hadayek al-Ahram<a><br>
+                <a class="popular-search-link" href="#">Haram</a><br>
+                <a class="popular-search-link" href="#">Faisal</a><br>
+                <a class="popular-search-link" href="#">Hurgdada</a><br>
+                <a class="popular-search-link" href="#">Mansura</a><br>
+                <a class="popular-search-link" href="#">Ain Shams</a><br>
+                <a class="popular-search-link" href="#">Marsa Matrouh</a><br>
+                <a class="popular-search-link" href="#">Tanta</a><br>
+                <a class="popular-search-link" href="#">Agami</a><br>
+                <a class="popular-search-link" href="#">Mokattam</a><br>
+                <a class="popular-search-link" href="#">Dokki</a><br>
+                <a class="popular-search-link" href="#">Maamoura</a><br>
+                <a class="popular-search-link" href="#">Gesr al-suez</a>
+        </div>
+        </div>
+        <div class="product col">   
+            <p class=""><b>Mobile Phones in Egypt</b></p>
+            <div>
+                <a class="popular-search-link" href="#">Cairo</a><br>
+            <a class="popular-search-link" href="#">Alexandria</a><br>
+            <a class="popular-search-link" href="#">Monufia</a><br>
+            <a class="popular-search-link" href="#">Ismailia</a><br>
+            <a class="popular-search-link" href="#">Damietta</a><br>
+            <a class="popular-search-link" href="#">Giza</a><br>
+            <a class="popular-search-link" href="#">Asyut</a><br>
+            <a class="popular-search-link" href="#">Minya</a><br>
+            <a class="popular-search-link" href="#">Suez</a><br>
+            <a class="popular-search-link" href="#">Beni Suef</a><br>
+            <a class="popular-search-link"  href="#">Sohag</a><br>
+            <a class="popular-search-link"  href="#">Port Said</a><br>
+            <a class="popular-search-link"  href="#">Sharqia</a><br>
+            <a class="popular-search-link"  href="#">Fayoum</a><br>
+            <a class="popular-search-link"  href="#">Qena</a><br>
+            <a class="popular-search-link"  href="#">Luxor</a><br>
+            <a class="popular-search-link"  href="#">Aswan</a><br>
+            <a class="popular-search-link"  href="#">Kafr al-Sheikh</a><br>
+            <a class="popular-search-link"  href="#">Qalyubia</a><br>
+            <a class="popular-search-link"  href="#">Dakahlia</a>
+        </div>
+      </div>
+    <button id="view" onclick="viewAll()" class="btn btn-danger float-end ">View More<span class="arrow down"><i class="fa-solid fa-chevron-down"></i></span> </button>
+  </div>
+  </div>
+</div>
+</body>
+</html>

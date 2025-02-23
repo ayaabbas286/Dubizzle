@@ -3,98 +3,473 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dubizzle</title>
-    <link rel="stylesheet" href="Home.css" />    <link rel="stylesheet" href="/liberaries/bootstrap.min.css" />
+    <title>
+      Dubizzle (OLX) - Buy and sell anything in Egypt with Dubizzle (OLX) online
+      classifieds
+    </title>
+    <link rel="stylesheet" href="Home.css" />
+    <link rel="stylesheet" href="/liberaries/bootstrap.min.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
     />
-    <link rel="stylesheet" href="/liberaries/bootstrap-icons.css" />
-    <link rel="stylesheet" href="/liberaries/animate.css" />
     <link
-      rel="icon"
-      href="/Images/Icons/fire_17985325.png"
-      type="image/x-icon"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
     />
-    <link href="https://fonts.cdnfonts.com/css/proxima-nova-condensed" rel="stylesheet">
-                
+    <link rel="stylesheet" href="/liberaries/animate.css" />
+    <link rel="icon" href="/Images/icons--/Logo.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.cdnfonts.com/css/proxima-nova-condensed"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- this the header section  -->
+    <!-- Header section -->
+    <header class="p-fixed">
+      <div class="container">
+        <div class="top d-flex">
+          <div class="left">
+            <img
+              class="logo"
+              src="/Images/icons--/Logo.svg"
+              alt="dubizzle-logo"
+            />
+          </div>
+          <div class="right d-flex">
+            <div class="motors">
+              <div class="bg-motors"></div>
+              <img
+                class="logo"
+                src="/Images/icons--/Vehicles.svg"
+                alt="dubizzle-logo"
+              />
+              <a class="" href="#">Motors</a>
+            </div>
+            <div class="properites">
+              <div class="bg-properites"></div>
+              <img
+                class="logo"
+                src="/Images/icons--/Properties.svg"
+                alt="dubizzle-logo"
+              />
+              <a class="" href="#">Properites</a>
+            </div>
+          </div>
+        </div>
+        <div class="buttom d-flex justify-content-between">
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+              <span>Egypt</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="search-box">
+                <input type="text" placeholder="Search for location" />
+              </div>
+              <div class="location-options">
+                <a class="use-location" href="#"
+                  ><i
+                    class="fa-solid fa-location-crosshairs"
+                    style="color: #ff0000"
+                  ></i>
+                  Use current location</a
+                >
+                <br />
+                <a class="choose-location" href="#">Choose location</a> <br />
+                <a class="see-ads" href="#">See ads in all Egypt</a>
+              </div>
+              <div class="governorates">
+                <a href="#"
+                  ><span>Alexandria</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Aswan</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Asyut</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Beheira</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Beni Suef</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Cairo</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Dakahlia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Damietta</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Faiyum</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Gharbia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Giza</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Ismailia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Kafr El Sheikh</span>
+                  <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Luxor</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Matrouh</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Minya</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Monufia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>New Valley</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>North Sinai</span>
+                  <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Port Said</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Qalyubia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Qena</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Red Sea</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Sharqia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Sohag</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>South Sinai</span>
+                  <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Suez</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+              </div>
+            </div>
+          </div>
+          <div class="search-containered">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Find Cars, Mobile Phones and more..."
+            />
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="links d-flex">
+            <a class="lang" href="#">العربية</a>
+            <a class="login" href="#">Login</a>
+            <button type="button" class="btn btn-danger sell">
+              Post Your Ad
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header section -->
+    <!-- Nav bar & slider -->
+    <nav>
+      <div class="container">
+        <div class="subMeue d-flex justify-content-around">
+          <div class="MenueVehicles">
+            <h6>Vehicles</h6>
+            <div class="Vehiclescontent">
+              <ul>
+                <div class="first-sub-v d-flex justify-content-between">
+                  <div>
+                    <li><a class="brand-visible" href="#">Cars for Sale</a></li>
+                  </div>
+                  <div><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+                <li><a href="#">Cars for Rent</a></li>
+                <li><a href="#">Tyres, Batteries, Oils, & Accessories</a></li>
+                <li><a href="#">Car Spare Parts</a></li>
+                <li><a href="#">Motorcycles & Accessories</a></li>
+                <li><a href="#">Boats - Watercraft</a></li>
+                <li><a href="#">Heavy Trucks, Buses & Other Vehicles</a></li>
+              </ul>
+            </div>
+            <div class="brands-section">
+              <div class="brands-header d-flex justify-content-between">
+                <h5>Popular Brands</h5>
+                <a href="#"
+                  >See all <span><i class="fa-solid fa-angle-right"></i></span
+                ></a>
+              </div>
+              <div class="brands-car d-flex justify-content-between">
+                <div>
+                  <div><a href="">Mercedes</a></div>
+                  <div><a href="">Benz</a></div>
+                  <div><a href="">BMW</a></div>
+                  <div><a href="#">Hyundai</a></div>
+                  <div><a href="#">Kia</a></div>
+                  <div><a href="#">Renault</a></div>
+                  <div><a href="#">Skoda</a></div>
+                  <div><a href="#">Nissan</a></div>
+                  <div><a href="#">Toyota</a></div>
+                </div>
+                <div>
+                  <div><a href="#">Volkswagen</a></div>
+                  <div><a href="#">Chevrolet</a></div>
+                  <div><a href="#">MG</a></div>
+                  <div><a href="#">Opel</a></div>
+                  <div><a href="#">Peugeot</a></div>
+                  <div><a href="#">Seat</a></div>
+                  <div><a href="#">Mitsubishi</a></div>
+                  <div><a href="#">Jeep</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties">
+            <h6>Properties</h6>
+            <div class="prop-content">
+              <ul>
+                <li><a href="#">Apartments for Sale</a></li>
+                <li><a href="#">Apartments For Rent</a></li>
+                <li><a href="#">Villas For Rent</a></li>
+                <li><a href="#">Villas For Rent</a></li>
+                <li><a href="#">Vacation Homes for Sale</a></li>
+                <li><a href="#">Vacation Homes for Rent</a></li>
+                <li><a href="#">Commercial for Sale</a></li>
+                <li><a href="#">Commercial for Rent</a></li>
+                <li><a href="#">Buildings & Lands</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Mobiles">
+            <h6>Mobiles & Tablets</h6>
+            <div class="mobile-content">
+              <ul>
+                <li><a href="#">Mobile Phones</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Mobile & Tablet Accessories</a></li>
+                <li><a href="#">Mobile Numbers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <h6>Jobs</h6>
+            <div class="job-content d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li><a href="#">Accounting, Finance & Banking</a></li>
+                  <li><a href="#">Engineering</a></li>
+                  <li><a href="#">Designers</a></li>
+                  <li><a href="#">Customer Service & Call Center</a></li>
+                  <li><a href="#">Workers and Technicians </a></li>
+                  <li><a href="#">Management & Consulting</a></li>
+                  <li><a href="#">Drivers & Delivery</a></li>
+                  <li><a href="#"> Education </a></li>
+                  <li><a href="#">HR </a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">Tourism, Travel & Hospitality</a></li>
+                  <li><a href="#">IT - Telecom</a></li>
+                  <li><a href="#">Marketing and Public Relations</a></li>
+                  <li><a href="#">Medical, Healthcare, & Nursing</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Secretarial</a></li>
+                  <li><a href="#"> Guards and Security</a></li>
+                  <li><a href="#">Legal - Lawyers</a></li>
+                  <li><a href="#">Other Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Electronics">
+            <h6>Electronics & Appliances</h6>
+            <div class="Elect-content">
+              <ul>
+                <li><a href="#"> TV - Audio - Video </a></li>
+                <li><a href="#">Computers - Accessories</a></li>
+                <li><a href="#">Video games - Consoles</a></li>
+                <li><a href="#"> Cameras - Imaging</a></li>
+                <li><a href="#">Home AppliancesAppliances</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Furniture">
+            <h6>Furniture & Decor</h6>
+            <div class="Furniture-content d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li><a href="#">Bathroom</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                  <li><a href="#">Dining Room</a></li>
+                  <li><a href="#">Fabrics - Curtains - Carpets</a></li>
+                  <li><a href="#">Garden - Outdoor </a></li>
+                  <li><a href="#">Home Decoration</a></li>
+                  <li><a href="#">Kitchen - Kitchenware </a></li>
+                  <li><a href="#"> Lighting Tools </a></li>
+                  <li><a href="#">Living Room </a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#"> Multiple/Other Furniture</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="MenueTitle">
+            <h6>
+              <span><i class="fa-solid fa-shapes"></i></span> More Categories
+            </h6>
+          </div>
+        </div>
 
+        <div
+          id="carouselExampleAutoplaying "
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="3000"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="../Images/slider1.jpg"
+                class="d-block w-100 rounded"
+                alt="Slide 1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../Images/slider2.jpg"
+                class="d-block w-100 rounded"
+                alt="Slide 2"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../Images/slider3.jpg"
+                class="d-block w-100 rounded"
+                alt="Slide 3"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="../Images/slider4.jpg"
+                class="d-block w-100 rounded"
+                alt="Slide 4"
+              />
+            </div>
+          </div>
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="3"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ending the nav section with the carousel -->
+    <!-- ad section -->
+    <div class="ads-container">
+      <div class="row row-cols-lg-10">
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26291245_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26438529_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26583207_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26625841_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26583207_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26502534_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26438529_1.webp" />
+        </div>
+        <div class="col ads-img">
+          <img src="/Images/Ads/ST-26291251_1.webp" />
+        </div>
+        <div class="ads-brand col">
+          <h4>Bath and Body Works Egypt</h4>
+          <div class="x-mark">
+            <span><i class="fa-solid fa-exclamation"></i></span>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end ads section -->
     <!-- this is the section of cards -->
-
     <div class="main-section">
-      <div class="containered">
-        <!-- villas for sale -->
+      <div class="container">
+        <!-- opening sale  -->
         <div class="sale">
+          <!-- opening row  -->
           <div class="row mt-5">
             <div class="title-sub d-flex justify-content-between">
               <div>
                 <h4>Villas For Sale</h4>
               </div>
               <div class="view-more">
-                  <a class="nav-link " href="#"
-                    >View More
-                    <span><i class="fa-solid fa-chevron-right"></i></span
-                  ></a>
-                
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
               </div>
             </div>
+            <!-- starting cards -->
             <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem">
-                <img
-                  class="card-img-top"
-                  src="/Images/Products/135324155-800x600.webp"
-                  alt="Card image cap"
-                />
-                <div class="card-body">
-                  <div class="d-flex justify-content-between">        
-
-                    <div class="card-price">EGP 18,000</div>
-                    <i class="fa-regular fa-heart mt-1"></i>
-                  </div>
-                  <p class="card-text">
-                    Standalone Villa 440 meters for sale at Waterway sale at
-                    Waterway design...
-                  </p>
-                  <div class="svg-icons"></div>
-
-                  <img
-                    src="/Images/icons--/svgexport-13.svg"
-                    alt=""
-                    style="width: 15px; height: 15px"
-                  />
-                  <span style="font-size: 10px">5</span>
-                  <img
-                    src="/Images/icons--/svgexport-14.svg"
-                    style="width: 15px; height: 15px"
-                    alt=""
-                  />
-                  <span style="font-size: 10px">6</span>
-                  <svg
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    class="fd258638"
-                    width="14"
-                    height="14"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                      clip-rule="evenodd"
-                      fill="#464C55"
-                    ></path></svg
-                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                  <p style="font-size: 10px">Madinaty, Cairo</p>
-                  <p  class="time" style="font-size: 10px">1 day ago</p>
-
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem">
+              <div class="card">
                 <img
                   class="card-img-top"
                   src="/Images/Products/135324155-800x600.webp"
@@ -103,14 +478,12 @@
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <div class="card-price">EGP 18,000</div>
-                    <i class="fa-regular fa-heart mt-1"></i>
+                    <i class="fa-regular fa-heart"></i>
                   </div>
                   <p class="card-text">
                     Standalone Villa 440 meters for sale at Waterway sale at
                     Waterway design...
                   </p>
-                  <div class="svg-icons"></div>
-
                   <img
                     src="/Images/icons--/svgexport-13.svg"
                     alt=""
@@ -138,14 +511,13 @@
                       fill="#464C55"
                     ></path></svg
                   ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                  <p style="font-size: 10px">Madinaty, Cairo</p>
-                  <p  class="time" style="font-size: 10px">1 day ago</p>
-
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem">
+              <div class="card">
                 <img
                   class="card-img-top"
                   src="/Images/Products/135324155-800x600.webp"
@@ -154,14 +526,12 @@
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <div class="card-price">EGP 18,000</div>
-                    <i class="fa-regular fa-heart mt-1"></i>
+                    <i class="fa-regular fa-heart"></i>
                   </div>
                   <p class="card-text">
                     Standalone Villa 440 meters for sale at Waterway sale at
                     Waterway design...
                   </p>
-                  <div class="svg-icons"></div>
-
                   <img
                     src="/Images/icons--/svgexport-13.svg"
                     alt=""
@@ -189,14 +559,13 @@
                       fill="#464C55"
                     ></path></svg
                   ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                  <p style="font-size: 10px">Madinaty, Cairo</p>
-                  <p  class="time" style="font-size: 10px">1 day ago</p>
-
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
                 </div>
               </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12">
-              <div class="card" style="width: 18rem">
+              <div class="card">
                 <img
                   class="card-img-top"
                   src="/Images/Products/135324155-800x600.webp"
@@ -205,14 +574,12 @@
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <div class="card-price">EGP 18,000</div>
-                    <i class="fa-regular fa-heart mt-1"></i>
+                    <i class="fa-regular fa-heart"></i>
                   </div>
                   <p class="card-text">
                     Standalone Villa 440 meters for sale at Waterway sale at
                     Waterway design...
                   </p>
-                  <div class="svg-icons"></div>
-
                   <img
                     src="/Images/icons--/svgexport-13.svg"
                     alt=""
@@ -240,1427 +607,1691 @@
                       fill="#464C55"
                     ></path></svg
                   ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                  <p style="font-size: 10px">Madinaty, Cairo</p>
-                  <p  class="time" style="font-size: 10px">1 day ago</p>
-
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
                 </div>
               </div>
             </div>
-             <!-- rent section -->
-              <div class="rent">
-             <div class="row mt-5">
-              <div class="title-sub d-flex justify-content-between">
-                <div>
-                  <h4>Villas For Rent</h4>
-                </div>
-                <div class=" view-more">
-                    <a class="nav-link " href="#"
-                      >View More
-                      <span><i class="fa-solid fa-chevron-right"></i></span
-                    ></a>
-                  
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card" style="width: 18rem">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
                   <img
-                    class="card-img-top"
-                    src="/Images/Products/135324155-800x600.webp"
-                    alt="Card image cap"
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
                   />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="card-price">EGP 18,000</div>
-                      <i class="fa-regular fa-heart mt-1"></i>
-                    </div>
-                    <p class="card-text">
-                      Standalone Villa 440 meters for sale at Waterway sale at
-                      Waterway design...
-                    </p>
-                    <div class="svg-icons"></div>
-  
-                    <img
-                      src="/Images/icons--/svgexport-13.svg"
-                      alt=""
-                      style="width: 15px; height: 15px"
-                    />
-                    <span style="font-size: 10px">5</span>
-                    <img
-                      src="/Images/icons--/svgexport-14.svg"
-                      style="width: 15px; height: 15px"
-                      alt=""
-                    />
-                    <span style="font-size: 10px">6</span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="fd258638"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                        clip-rule="evenodd"
-                        fill="#464C55"
-                      ></path></svg
-                    ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                    <p style="font-size: 10px">Madinaty, Cairo</p>
-                    <p  class="time" style="font-size: 10px">1 day ago</p>
-  
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card" style="width: 18rem">
+                  <span style="font-size: 10px">5</span>
                   <img
-                    class="card-img-top"
-                    src="/Images/Products/135324155-800x600.webp"
-                    alt="Card image cap"
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
                   />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="card-price">EGP 18,000</div>
-                      <i class="fa-regular fa-heart mt-1"></i>
-                    </div>
-                    <p class="card-text">
-                      Standalone Villa 440 meters for sale at Waterway sale at
-                      Waterway design...
-                    </p>
-                    <div class="svg-icons"></div>
-  
-                    <img
-                      src="/Images/icons--/svgexport-13.svg"
-                      alt=""
-                      style="width: 15px; height: 15px"
-                    />
-                    <span style="font-size: 10px">5</span>
-                    <img
-                      src="/Images/icons--/svgexport-14.svg"
-                      style="width: 15px; height: 15px"
-                      alt=""
-                    />
-                    <span style="font-size: 10px">6</span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="fd258638"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                        clip-rule="evenodd"
-                        fill="#464C55"
-                      ></path></svg
-                    ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                    <p style="font-size: 10px">Madinaty, Cairo</p>
-                    <p  class="time" style="font-size: 10px">1 day ago</p>
-  
-                  </div>
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card" style="width: 18rem">
+            </div>
+            <!-- ending sale cards -->
+            <!-- closed tages for row -->
+          </div>
+          <!-- closed tages for sale -->
+        </div>
+        <!-- ending sale  -->
+        <!-- starting the rent section -->
+        <div class="rent">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Villas For Rent</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
                   <img
-                    class="card-img-top"
-                    src="/Images/Products/135324155-800x600.webp"
-                    alt="Card image cap"
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
                   />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="card-price">EGP 18,000</div>
-                      <i class="fa-regular fa-heart mt-1"></i>
-                    </div>
-                    <p class="card-text">
-                      Standalone Villa 440 meters for sale at Waterway sale at
-                      Waterway design...
-                    </p>
-                    <div class="svg-icons"></div>
-  
-                    <img
-                      src="/Images/icons--/svgexport-13.svg"
-                      alt=""
-                      style="width: 15px; height: 15px"
-                    />
-                    <span style="font-size: 10px">5</span>
-                    <img
-                      src="/Images/icons--/svgexport-14.svg"
-                      style="width: 15px; height: 15px"
-                      alt=""
-                    />
-                    <span style="font-size: 10px">6</span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="fd258638"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                        clip-rule="evenodd"
-                        fill="#464C55"
-                      ></path></svg
-                    ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                    <p style="font-size: 10px">Madinaty, Cairo</p>
-                    <p  class="time" style="font-size: 10px">1 day ago</p>
-  
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="card" style="width: 18rem">
+                  <span style="font-size: 10px">5</span>
                   <img
-                    class="card-img-top"
-                    src="/Images/Products/135324155-800x600.webp"
-                    alt="Card image cap"
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
                   />
-                  <div class="card-body">
-                    <div class="d-flex justify-content-between">
-                      <div class="card-price">EGP 18,000</div>
-                      <i class="fa-regular fa-heart mt-1"></i>
-                    </div>
-                    <p class="card-text">
-                      Standalone Villa 440 meters for sale at Waterway sale at
-                      Waterway design...
-                    </p>
-                    <div class="svg-icons"></div>
-  
-                    <img
-                      src="/Images/icons--/svgexport-13.svg"
-                      alt=""
-                      style="width: 15px; height: 15px"
-                    />
-                    <span style="font-size: 10px">5</span>
-                    <img
-                      src="/Images/icons--/svgexport-14.svg"
-                      style="width: 15px; height: 15px"
-                      alt=""
-                    />
-                    <span style="font-size: 10px">6</span>
-                    <svg
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      class="fd258638"
-                      width="14"
-                      height="14"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                        clip-rule="evenodd"
-                        fill="#464C55"
-                      ></path></svg
-                    ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                    <p style="font-size: 10px">Madinaty, Cairo</p>
-                    <p  class="time" style="font-size: 10px">1 day ago</p>
-  
-                  </div>
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
                 </div>
               </div>
-              <!-- Vacation Homes for Rent -->
-              <div class="Vacation">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Vacation Homes for Rent</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-              <!-- Cars for Sale -->
-              <div class="Cars">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Cars for Sale</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                   
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-              <!-- Mobile Phones -->
-              <div class="Mobile">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Mobile Phones</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-              <!-- Jobs -->
-              <div class="Jobs">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Jobs</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card">
-                    <img
-                      class="card-img-top img-job"
-                      src="/Images/Icons/jobs.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                        <p class="card-text">
-                          مطلوب شاب للعمل بمركز تصوير وطباعه                       </p>                        <i class="fa-regular fa-heart mt-1"></i>
-                      </div>
-                      
-                      <p style="font-size: 10px">Madinaty, Cairo</p>
-                      <p  class="time" style="font-size: 10px">1 day ago</p>
-    
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="card" style="width: 18rem">
-                    <img
-                      class="card-img-top img-job"
-                      src="/Images/Icons/jobs.png"
-                      alt="Card image cap"
-                    />
-                    <div class="card-body">
-                      <div class="d-flex justify-content-between">
-                        <p class="card-text">
-                          مطلوب شاب للعمل بمركز تصوير وطباعه                       </p>                        <i class="fa-regular fa-heart mt-1"></i>
-                      </div>
-
-                      <p style="font-size: 10px">Madinaty, Cairo</p>
-                      <p  class="time" style="font-size: 10px">1 day ago</p>
-    
-                    </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top img-job"
-                       src="/Images/Icons/jobs.png"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                        <p class="card-text">
-                          مطلوب شاب للعمل بمركز تصوير وطباعه                       </p>                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                      
-     
-                       
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-             <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top img-job"
-                       src="/Images/Icons/jobs.png"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                        <p class="card-text">
-                          مطلوب شاب للعمل بمركز تصوير وطباعه                       </p>                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-              <!-- Laptop computers  -->
-              <div class="rent">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Laptop computers</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-              <!-- Home Decoration -->
-              <div class="rent">
-                <div class="row mt-5">
-                 <div class="title-sub d-flex justify-content-between">
-                   <div>
-                     <h4>Home Decoration</h4>
-                   </div>
-                   <div class=" view-more">
-                       <a class="nav-link " href="#"
-                         >View More
-                         <span><i class="fa-solid fa-chevron-right"></i></span
-                       ></a>
-                     
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-                 <div class="col-lg-3 col-md-6 col-sm-12">
-                   <div class="card" style="width: 18rem">
-                     <img
-                       class="card-img-top"
-                       src="/Images/Products/135324155-800x600.webp"
-                       alt="Card image cap"
-                     />
-                     <div class="card-body">
-                       <div class="d-flex justify-content-between">
-                         <div class="card-price">EGP 18,000</div>
-                         <i class="fa-regular fa-heart mt-1"></i>
-                       </div>
-                       <p class="card-text">
-                         Standalone Villa 440 meters for sale at Waterway sale at
-                         Waterway design...
-                       </p>
-                       <div class="svg-icons"></div>
-     
-                       <img
-                         src="/Images/icons--/svgexport-13.svg"
-                         alt=""
-                         style="width: 15px; height: 15px"
-                       />
-                       <span style="font-size: 10px">5</span>
-                       <img
-                         src="/Images/icons--/svgexport-14.svg"
-                         style="width: 15px; height: 15px"
-                         alt=""
-                       />
-                       <span style="font-size: 10px">6</span>
-                       <svg
-                         xmlns:xlink="http://www.w3.org/1999/xlink"
-                         xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 24 24"
-                         class="fd258638"
-                         width="14"
-                         height="14"
-                       >
-                         <path
-                           fill-rule="evenodd"
-                           d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
-                           clip-rule="evenodd"
-                           fill="#464C55"
-                         ></path></svg
-                       ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
-                       <p style="font-size: 10px">Madinaty, Cairo</p>
-                       <p  class="time" style="font-size: 10px">1 day ago</p>
-     
-                     </div>
-                   </div>
-                 </div>
-  </div>
-
-</div>
-        <!-- Popular Searches -->
-        <!-- footer section -->
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- ending the cards for rent-->
+            <!-- closed tages for row -->
+          </div>
+          <!-- closed tages for rent -->
+        </div>
+        <!-- ending the rent section -->
+        <!-- starting the Vacation section -->
+        <div class="Vacation">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Vacation Homes for Rent</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- ending the cards for Vacation -->
+            <!-- closed tages for row -->
+          </div>
+          <!-- closed tages for Vacation  -->
+        </div>
+        <!-- ending the Vacation  section -->
+        <!-- starting the Cars section -->
+        <div class="Cars">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Cars for Sale</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- ending the cards for cars-->
+            <!-- closed tages for row -->
+          </div>
+          <!-- closed tages for cars -->
+        </div>
+        <!-- ending the cars section -->
+        <!--  starting Mobile Phones -->
+        <div class="Mobile">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Mobile Phones</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <!-- starting the cards for mobile -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- closed tages for row -->
+          </div>
+          <!-- closed tages for Mobile -->
+        </div>
+        <!-- ending the Mobile section -->
+        <!-- Jobs -->
+        <div class="Jobs">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Jobs</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <!-- starting job cards-->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top img-job"
+                  src="/Images/Icons/jobs.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text job-title">
+                      مطلوب شاب للعمل بمركز تصوير وطباعه
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time" style="font-size: 10px">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top img-job"
+                  src="/Images/Icons/jobs.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text job-title">
+                      مطلوب شاب للعمل بمركز تصوير وطباعه
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time" style="font-size: 10px">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top img-job"
+                  src="/Images/Icons/jobs.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text job-title">
+                      مطلوب شاب للعمل بمركز تصوير وطباعه
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time" style="font-size: 10px">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top img-job"
+                  src="/Images/Icons/jobs.png"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <p class="card-text job-title">
+                      مطلوب شاب للعمل بمركز تصوير وطباعه
+                    </p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time" style="font-size: 10px">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- closed tages for job row -->
+          </div>
+          <!-- closed tages for Jobs -->
+        </div>
+        <!-- ending the Jobs section -->
+        <!-- starting  Laptop  -->
+        <div class="Laptop">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Laptop computers</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <!-- starting Laptop computers cards-->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- closed tages for Laptop  row -->
+          </div>
+          <!-- closed tages for Laptop  -->
+        </div>
+        <!-- ending the Laptop  section -->
+        <!-- starting Home Decoration -->
+        <div class="Decoration">
+          <div class="row mt-5">
+            <div class="title-sub d-flex justify-content-between">
+              <div>
+                <h4>Home Decoration</h4>
+              </div>
+              <div class="view-more">
+                <a class="nav-link" href="#"
+                  >View More
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </div>
+            </div>
+            <!-- starting Decoration cards-->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="/Images/Products/135324155-800x600.webp"
+                  alt="Card image cap"
+                />
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div class="card-price">EGP 18,000</div>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                  <p class="card-text">
+                    Standalone Villa 440 meters for sale at Waterway sale at
+                    Waterway design...
+                  </p>
+                  <img
+                    src="/Images/icons--/svgexport-13.svg"
+                    alt=""
+                    style="width: 15px; height: 15px"
+                  />
+                  <span style="font-size: 10px">5</span>
+                  <img
+                    src="/Images/icons--/svgexport-14.svg"
+                    style="width: 15px; height: 15px"
+                    alt=""
+                  />
+                  <span style="font-size: 10px">6</span>
+                  <svg
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    class="fd258638"
+                    width="14"
+                    height="14"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M2 4l1-1h18l1 1v16l-1 1H3l-1-1V4zm9 15H4v-6h7v6zm0-8H4V5h7v6zm9 8h-7v-6h7v6z"
+                      clip-rule="evenodd"
+                      fill="#464C55"
+                    ></path></svg
+                  ><span class="mx-2" style="font-size: 10px">260 Sqm</span>
+                  <p class="place">Madinaty, Cairo</p>
+                  <p class="time">1 day ago</p>
+                </div>
+              </div>
+            </div>
+            <!-- closed tages for Decoration row -->
+          </div>
+          <!-- closed tages for Decoration -->
+        </div>
+        <!-- ending the Decoration section -->
+        <!-- closed tages for container cards down -->
+      </div>
+      <!-- closed tages for main secion  down -->
+    </div>
+    <!-- Popular Searches -->
+    <div class="container">
+      <h4><b>Popular Searches</b></h4>
+      <div id="government">
+        <div
+          class="row row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-sm-1 py-3 government-height"
+        >
+          <div class="product col">
+            <p class=""><b>Cars for Sale in Egypt</b></p>
+            <div class="bord">
+              <a class="popular-search-link" href="#">Cairo</a><br />
+              <a class="popular-search-link" href="#">Alexandria</a><br />
+              <a class="popular-search-link" href="#">Giza</a><br />
+              <a class="popular-search-link" href="#">Sharqia</a><br />
+              <a class="popular-search-link" href="#">Port Said</a><br />
+              <a class="popular-search-link" href="#">Ismailia</a><br />
+              <a class="popular-search-link" href="#">Asyut</a><br />
+              <a class="popular-search-link" href="#">Gharbia</a><br />
+              <a class="popular-search-link" href="#">Dakahlia</a><br />
+              <a class="popular-search-link" href="#">Damietta</a><br />
+              <a class="popular-search-link" href="#">Beheira</a><br />
+              <a class="popular-search-link" href="#">Qalyubia</a><br />
+              <a class="popular-search-link" href="#">Monufia</a><br />
+              <a class="popular-search-link" href="#">Minya</a><br />
+              <a class="popular-search-link" href="#">Fayoum</a><br />
+              <a class="popular-search-link" href="#">Suez</a><br />
+              <a class="popular-search-link" href="#">Beni Suef</a><br />
+              <a class="popular-search-link" href="#">Qena</a><br />
+              <a class="popular-search-link" href="#">Red Sea</a><br />
+              <a class="popular-search-link" href="#">kafr al-Sheikh</a>
+            </div>
+          </div>
+          <div class="product col">
+            <p class=""><b>Apartments for Sale in Egypt</b></p>
+            <div class="bord">
+              <a class="popular-search-link" href="#">6th of October</a><br />
+              <a class="popular-search-link" href="#">Shikh Zayed</a><br />
+              <a class="popular-search-link" href="#">Naser City</a><br />
+              <a class="popular-search-link" href="#">Shorouk City</a><br />
+              <a class="popular-search-link" href="#">Obour City</a><br />
+              <a class="popular-search-link" href="#">Maadi</a><br />
+              <a class="popular-search-link" href="#">Hadayek al-Ahram</a><br />
+              <a class="popular-search-link" href="#">Heliopolis</a><br />
+              <a class="popular-search-link" href="#">Agami</a><br />
+              <a class="popular-search-link" href="#">Mansura</a><br />
+              <a class="popular-search-link" href="#">Tanta</a><br />
+              <a class="popular-search-link" href="#">New cairo</a><br />
+              <a class="popular-search-link" href="#">Mokattam</a><br />
+              <a class="popular-search-link" href="#">Haram</a><br />
+              <a class="popular-search-link" href="#">Smoha</a><br />
+              <a class="popular-search-link" href="#">Hurghada</a><br />
+              <a class="popular-search-link" href="#">Madinaty</a><br />
+              <a class="popular-search-link" href="#">Hadayek al-Kobba</a><br />
+              <a class="popular-search-link" href="#">Faisal</a><br />
+              <a class="popular-search-link" href="#">10th of Ramadan</a>
+            </div>
+          </div>
+          <div class="product col">
+            <p class=""><b>Apartments for Rent in Egypt</b></p>
+            <div class="bord">
+              <a class="popular-search-link" href="#">6th of October</a><br />
+              <a class="popular-search-link" href="#">Nasr City</a><br />
+              <a class="popular-search-link" href="#">Shikh Zayed</a><br />
+              <a class="popular-search-link" href="#">Maadi</a><br />
+              <a class="popular-search-link" href="#">Heliopolis</a><br />
+              <a class="popular-search-link" href="#">Obour City</a><br />
+              <a class="popular-search-link" href="#">Shorouk City</a><br />
+              <a class="popular-search-link" href="#">Hadayek al-Ahram</a><br />
+              <a class="popular-search-link" href="#">Haram</a><br />
+              <a class="popular-search-link" href="#">Faisal</a><br />
+              <a class="popular-search-link" href="#">Hurgdada</a><br />
+              <a class="popular-search-link" href="#">Mansura</a><br />
+              <a class="popular-search-link" href="#">Ain Shams</a><br />
+              <a class="popular-search-link" href="#">Marsa Matrouh</a><br />
+              <a class="popular-search-link" href="#">Tanta</a><br />
+              <a class="popular-search-link" href="#">Agami</a><br />
+              <a class="popular-search-link" href="#">Mokattam</a><br />
+              <a class="popular-search-link" href="#">Dokki</a><br />
+              <a class="popular-search-link" href="#">Maamoura</a><br />
+              <a class="popular-search-link" href="#">Gesr al-suez</a>
+            </div>
+          </div>
+          <div class="product col">
+            <p class=""><b>Mobile Phones in Egypt</b></p>
+            <div>
+              <a class="popular-search-link" href="#">Cairo</a><br />
+              <a class="popular-search-link" href="#">Alexandria</a><br />
+              <a class="popular-search-link" href="#">Monufia</a><br />
+              <a class="popular-search-link" href="#">Ismailia</a><br />
+              <a class="popular-search-link" href="#">Damietta</a><br />
+              <a class="popular-search-link" href="#">Giza</a><br />
+              <a class="popular-search-link" href="#">Asyut</a><br />
+              <a class="popular-search-link" href="#">Minya</a><br />
+              <a class="popular-search-link" href="#">Suez</a><br />
+              <a class="popular-search-link" href="#">Beni Suef</a><br />
+              <a class="popular-search-link" href="#">Sohag</a><br />
+              <a class="popular-search-link" href="#">Port Said</a><br />
+              <a class="popular-search-link" href="#">Sharqia</a><br />
+              <a class="popular-search-link" href="#">Fayoum</a><br />
+              <a class="popular-search-link" href="#">Qena</a><br />
+              <a class="popular-search-link" href="#">Luxor</a><br />
+              <a class="popular-search-link" href="#">Aswan</a><br />
+              <a class="popular-search-link" href="#">Kafr al-Sheikh</a><br />
+              <a class="popular-search-link" href="#">Qalyubia</a><br />
+              <a class="popular-search-link" href="#">Dakahlia</a>
+            </div>
+          </div>
+        </div>
+        <button id="view" onclick="viewAll()" class="btn btn-danger float-end">
+          View More<span class="arrow down"
+            ><i class="fa-solid fa-chevron-down"></i
+          ></span>
+        </button>
       </div>
     </div>
+    <!-- end the searches -->
+    <!-- ads section for footer -->
+    <div class="container">
+      <div class="row ads-footer">
+        <div class="col ads-img-footer">
+          <img  src="/Images/Ads/ST-26291245_1.webp" />
+        </div>
+        <div class="col ads-img-footer">
+          <img src="/Images/Ads/ST-26438529_1.webp" />
+        </div>
+        <div class="col ads-img-footer">
+          <img src="/Images/Ads/ST-26583207_1.webp" />
+        </div>
+        <div class="col ads-img-footer">
+          <img src="/Images/Ads/ST-26625841_1.webp" />
+        </div>
+        <div class="footer-ads-brand col">
+          <h4>Bath and Body Works Egypt</h4>
+          <div class="x-mark">
+            <span><i class="fa-solid fa-exclamation"></i></span>
+            <span><i class="fa-solid fa-xmark"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end section for footer -->
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <div class="row border-bottom border-secondary-subtle">
+          <div class="col pt-5">
+            <h4 class="heading-footer fw-bold">
+              Find amazing deals on the go.
+            </h4>
+            <h4 class="fw-bold SubHeading-footer">Download the app now!</h4>
+          </div>
+          <div class="col phone-img">
+            <img class="w-50" src="../images/per.png" alt="" />
+          </div>
+          <div class="col d-flex justify-content-around">
+            <a class="downapp" href="#"
+              ><img src="../images/apple.svg" alt=""
+            /></a>
+            <a class="downapp" href="#"
+              ><img src="../images/play.svg" alt=""
+            /></a>
+            <a class="downapp" href="#"
+              ><img src="../images/aap.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 border-bottom border-secondary-subtle"></div>
+      <div class="container pt-3 pb-6">
+        <div class="row secFooter">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">ABOUT US</h6>
+            <ul class="list-unstyled p-0 m-0">
+              <li><a class="decorated" href="#">About Dubizzle Group</a></li>
+              <li><a class="decorated" href="#">Careers</a></li>
+              <li><a class="decorated" href="#">Contact Us</a></li>
+              <li>
+                <a class="decorated" href="#">Dubizzle for Businesses</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">DUBIZZLE</h6>
+            <ul class="list-unstyled p-0 m-0">
+              <li><a class="decorated" href="#">Blog</a></li>
+              <li><a class="decorated" href="#">Help</a></li>
+              <li><a class="decorated" href="#">Sitemap</a></li>
+              <li><a class="decorated" href="#">Terms of use</a></li>
+              <li><a class="decorated" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">COUNTRIES</h6>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="me-3">
+                <a class="decorated" href="#">Bahrain</a>
+                <a class="decorated" href="#">Jordan</a>
+                <a class="decorated" href="#">Kuwait</a>
+                <a class="decorated" href="#">Lebanon</a>
+                <a class="decorated" href="#">Oman</a>
+              </div>
+              <div class="mx-5">
+                <a class="decorated" href="#">Qatar</a>
+                <a class="decorated" href="#">Saudi Arabia</a>
+                <a class="decorated" href="#">UAE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">FOLLOW US</h6>
+            <div class="d-flex gap-2 my-3">
+              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <div class="d-flex justify-content-between gap-2">
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/apple.svg"
+                  alt="App Store"
+              /></a>
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/play.svg"
+                  alt="Google Play"
+              /></a>
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/aap.svg"
+                  alt="App Gallery"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- endig the footer section -->
+    <!-- starting the sec-footer -->
+    <div class="copyRights text-end">
+      <span class="fw-bold">Classifieds In Egypt</span> &middot; &copy; 2025
+      Dubizzle
+    </div>
+    <!-- ending the sec-footer -->
+    <!-- endig the footer section -->
+    <script src="/main.js"></script>
     <script src="/liberaries/bootstrap.min.js"></script>
+    <script src="/Fontawsome/"></script>
     <script src="/liberaries/wow.min.js"></script>
     <script>
       new WOW().init();
