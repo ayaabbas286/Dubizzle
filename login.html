@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login In</h1>
+      <form id="LoginForm">
+        <div class="form-group">
+          <input id="LoginUser" type="text" placeholder="Enter Your Username" />
+        </div>
+
+        <div class="form-group">
+          <input
+            type="password"
+            id="UserPass"
+            placeholder="Enter Your Password"
+          />
+        </div>
+        <div id="reply" style="color: red; font-size: 12px;"></div>
+
+        <button type="submit" class="login-btn">Login In</button>
+        <div class="login-link">
+          Create an account? <a href="/register.html">Register now</a>
+        </div>
+      </form>
+    </div>
+    <script>
+      document.getElementById("LoginForm").onsubmit = function (event) {
+        event.preventDefault();
+        var username = document.getElementById("LoginUser").value;
+        var password = document.getElementById("UserPass").value;
+
+        var storedUsername = localStorage.getItem("username");
+        var storedPassword = localStorage.getItem("password");
+var FormRespond=document.getElementById("FormRespond");
+        if (username === storedUsername && password === storedPassword) {
+          window.location.href = "index.html";
+        } else {
+          document.getElementById("reply").innerHTML = "Invalid username or password";
+        }
+      };
+    </script>
+  </body>
+</html>

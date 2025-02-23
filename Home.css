@@ -265,6 +265,9 @@ input::placeholder {
 .img-contanied {
   width: 1030px;
 }
+.searchMobile .search-input {
+  width: 50px !important;
+}
 /* Nav Bar & Slider Style */
 nav {
   margin-top: 200px;
