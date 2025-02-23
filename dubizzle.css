@@ -1,0 +1,44 @@
+.row {
+  margin-bottom: 40px;
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    color: black;
+    font-size: 16px;
+  }
+  a {
+    line-height: 2;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .pouler a {
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.Categoies img {
+  margin-right: 10px;
+}
+.sub-link {
+  font-size: 14px !important;
+  margin-top: 5px;
+  text-decoration: none !important;
+}
+.sub-link .fa-angle-right {
+  font-size: 12px !important;
+  margin-top: -15px !important;
+  color: #e00000 !important;
+  font-weight: bold;
+  position: relative;
+}
+.pouler:hover .sub-link .fa-angle-right {
+  left: 10px;
+}
+.Categoies .nav-link:hover {
+  color: rgb(54, 154, 247);
+}
