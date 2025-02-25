@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="login.css" />
+    <link rel="icon" href="/Images/logo.svg" type="image/x-icon" />
   </head>
   <body>
     <div class="login-container">
@@ -21,7 +22,7 @@
             placeholder="Enter Your Password"
           />
         </div>
-        <div id="reply" style="color: red; font-size: 12px;"></div>
+        <div id="reply" style="color: red; font-size: 12px"></div>
 
         <button type="submit" class="login-btn">Login In</button>
         <div class="login-link">
@@ -37,11 +38,12 @@
 
         var storedUsername = localStorage.getItem("username");
         var storedPassword = localStorage.getItem("password");
-var FormRespond=document.getElementById("FormRespond");
+        var FormRespond = document.getElementById("FormRespond");
         if (username === storedUsername && password === storedPassword) {
           window.location.href = "index.html";
         } else {
-          document.getElementById("reply").innerHTML = "Invalid username or password";
+          document.getElementById("reply").innerHTML =
+            "Invalid username or password";
         }
       };
     </script>

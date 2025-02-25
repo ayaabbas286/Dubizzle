@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: "Cairo", serif;
+}
+
+/* dfkvlk;l */
+.Links_text_decor {
+  text-decoration: none;
+  color: #474747;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 2;
+}
+.Links_text_decor:hover {
+  color: #333;
+}
+
+.save_btn {
+  color: #000;
+  font-weight: bold;
+  display: inline-flex;
+  border-radius: 16px;
+  align-items: center;
+  padding: 0px 20px;
+  margin-top: 20px;
+  height: 50px;
+  width: 160px;
+  font-size: 16px;
+  background-color: white;
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.save_btn:hover {
+  background-color: #fef5f5;
+}
+
+/* Categories */
+
+.Categories {
+  background-color: #fef5f5;
+  font-size: 10px;
+  height: 250px;
+  overflow-y: hidden;
+  font-size: 14px;
+  line-height: 2;
+  border-radius: 10px;
+  padding: 5px 15px 15px 15px;
+}
+.view {
+  display: flex;
+  background-color: #fef5f5;
+  margin-top: -20px;
+  margin-bottom: 15px;
+  padding-top: 20px;
+}
+
+.view a {
+  text-decoration: none;
+  color: #e00000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.view i {
+  text-decoration: none;
+  color: #e00000;
+  font-weight: bold;
+  margin-top: 4px;
+  padding-left: 10px;
+}
+
+/* Location */
+
+.Location {
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #adb5bd;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 95%;
+}
+
+.dropdown-btn {
+  background-color: #fff;
+  color: #333;
+  padding: 12px 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  padding: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.governorates {
+  padding: 0;
+  list-style: none;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 6px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.governorates a {
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 14px;
+  align-items: center;
+  gap: 15px;
+}
+
+.governorates a i {
+  color: #d30b0b;
+  font-size: 24px;
+}
+
+.governorates a:hover {
+  background-color: #f5f5f5;
+}
+.over_scro {
+  max-height: 200px;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.ad-promotion {
+  padding: 30px;
+  background-color: #e7f1fd;
+  text-align: center;
+  color: #000;
+  border-radius: 3px;
+}
+.ad-promotion strong {
+  font-size: larger;
+  display: block;
+  margin-bottom: 10px;
+}
+.ad-promotion a {
+  color: #000000;
+  text-underline-offset: 8px;
+  font-weight: bold;
+  text-decoration-thickness: 2px;
+}
+
+.Businesses {
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-bottom: 10px;
+  align-items: center;
+  padding-bottom: 20px;
+  border-radius: 4px;
+}
+.Businesses img {
+  width: 110px;
+  height: 35px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.Businesses a {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-bottom: 20px; */
+}
+
+.custom-sort {
+  position: relative;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sort-label {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.custom-dropdown {
+  position: relative;
+  flex-grow: 1;
+}
+
+.custom-dropdown-btn {
+  width: 100%;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.custom-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px 0;
+  display: none;
+  z-index: 1000;
+}
+
+.custom-dropdown:hover .custom-dropdown-menu {
+  display: block;
+}
+
+.custom-dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.custom-dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.selected {
+  font-weight: bold;
+}
+
+.check-icon {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #000;
+}
+
+.cards {
+  border: 1px solid #ddb769;
+  border-radius: 10px;
+  height: 270px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  margin-left: -0.1rem !important ;
+  margin-right: -0.5rem !important ;
+  margin-bottom: 15px;
+}
+
+.cards .image {
+  height: 100%;
+  width: 30%;
+  position: relative;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  border-radius: 10px 0px 0px 8px;
+}
+
+.cards .image .typeAds {
+  position: absolute;
+  font-weight: bold;
+  width: 100%;
+  padding: 1px 10px;
+  top: 0px;
+  background: linear-gradient(
+    to right,
+    rgb(253, 221, 147),
+    rgb(228, 191, 111),
+    rgb(207, 174, 96)
+  );
+  border-radius: 10px 0px 0px 0px;
+  height: auto;
+}
+.featured {
+  position: absolute;
+  font-weight: bold;
+  width: auto;
+  padding: 1px 10px;
+  top: 10px;
+  left: 10px;
+  background-color: #ffba3c;
+  border-radius: 5px;
+  height: auto;
+}
+
+.cards .description .Car_Price {
+  color: #e00000;
+  font-size: 25px;
+  font-weight: bold;
+  display: block;
+}
+
+.cards .description .model_name {
+  font-size: 20px;
+  color: black;
+}
+
+.cards .description .descrip {
+  margin: 0;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  padding: 5px 22px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.call,
+.chat {
+  background-color: #fde6e6;
+  color: #000000;
+  border: none;
+}
+
+.call:hover,
+.chat:hover {
+  background-color: #f08080;
+}
+
+.whatsapp {
+  background-color: #eaf8e5;
+  color: #000000;
+  border: none;
+}
+
+.whatsapp:hover {
+  background-color: #93d8b5;
+}
+
+.cards .logo_camp {
+  position: relative;
+  text-align: center;
+  margin: 10px 0px;
+  border-left: 1px solid #dfdcdc;
+  padding-top: 80px;
+}
+
+.cards .logo_camp img {
+  width: 100px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.cards .logo_camp p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+.cards .logo_camp .P {
+  text-align: center;
+  font-size: 12px !important;
+}
+.cards .logo_camp i {
+  position: absolute;
+  bottom: 85%;
+  left: 95%;
+  font-size: 8px;
+}
+
+.pagination .page-item .page-link {
+  color: black;
+  border: none;
+}
+
+.pagination .page-item.active .page-link {
+  border-radius: 50%;
+  border: 1px solid #f80119;
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+.pagination .page-item .page-link:hover {
+  border-radius: 50%;
+  border: 1px solid #f80119;
+  color: black;
+  background-color: #fef5f5;
+}
+
+.v-all {
+  height: auto !important;
+}
+
+.popular-searches-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.popular-searches-list li {
+  display: flex;
+  align-items: center;
+
+  margin-right: 10px;
+}
+.popular-searches-list li a {
+  font-size: 12px;
+}
+
+.popular-searches-list li::after {
+  content: " - ";
+  margin-left: 5px;
+}
+
+.popular-searches-list li:last-child::after {
+  content: "";
+}
+
+.popular-searches {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+.popular-searches:hover {
+  color: #d30b0b;
+}
+footer {
+  height: 200px !important;
+  border-top: 1px solid #8e8e8e !important;
+}
+footer li a,
+a {
+  font-size: 12px !important;
+}
+.ads-img {
+  width: 120px !important;
+}
+.ads-img:hover {
+  transition: box-shadow 0.5s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}

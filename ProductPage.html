@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>product page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="/product.css" />
+    <link rel="icon" href="/Images/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="/Home.css" />
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="p-fixed">
+      <div class="container">
+        <div class="top d-flex">
+          <div class="left">
+            <a href="/index.html">
+              <img
+                class="logo"
+                src="/Images/icons--/Logo.svg"
+                alt="dubizzle-logo"
+            /></a>
+          </div>
+          <div class="right d-flex">
+            <div class="motors">
+              <div class="bg-motors"></div>
+              <img
+                class="logo"
+                src="/Images/icons--/Vehicles.svg"
+                alt="dubizzle-logo"
+              />
+              <a class="" href="#">Motors</a>
+            </div>
+            <div class="properites">
+              <div class="bg-properites"></div>
+              <img
+                class="logo"
+                src="/Images/icons--/Properties.svg"
+                alt="dubizzle-logo"
+              />
+              <a class="" href="/Properties.html">Properites</a>
+            </div>
+          </div>
+        </div>
+        <div class="buttom d-flex justify-content-between">
+          <div class="dropdown">
+            <button class="dropdown-btn">
+              <i class="fa-solid fa-location-dot" style="color: #ff0000"></i>
+              <span>Egypt</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <div class="search-box">
+                <input type="text" placeholder="Search for location" />
+              </div>
+              <div class="location-options">
+                <a class="use-location" href="#"
+                  ><i
+                    class="fa-solid fa-location-crosshairs"
+                    style="color: #ff0000"
+                  ></i>
+                  Use current location</a
+                >
+                <br />
+                <a class="choose-location" href="#">Choose location</a> <br />
+                <a class="see-ads" href="#">See ads in all Egypt</a>
+              </div>
+              <div class="governorates">
+                <a href="#"
+                  ><span>Alexandria</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Aswan</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Asyut</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Beheira</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Beni Suef</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Cairo</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Dakahlia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Damietta</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Faiyum</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Gharbia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Giza</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Ismailia</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Kafr El Sheikh</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Luxor</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Matrouh</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Minya</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Monufia</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>New Valley</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>North Sinai</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Port Said</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Qalyubia</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Qena</span> <i class="fas fa-angle-right"></i></a
+                ><br />
+                <a href="#"
+                  ><span>Red Sea</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Sharqia</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Sohag</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>South Sinai</span> <i class="fas fa-angle-right"></i
+                ></a>
+                <a href="#"
+                  ><span>Suez</span> <i class="fas fa-angle-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="search-containered">
+            <input
+              type="text"
+              class="search-input"
+              placeholder="Find Cars, Mobile Phones and more..."
+            />
+            <button class="search-button">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+          <div class="links d-flex">
+            <a class="lang" href="#">العربية</a>
+            <a class="login" href="/login.html">Login</a>
+            <button type="button" class="btn btn-danger sell">
+              Post Your Ad
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- End Header section -->
+    <!-- Nav bar & slider -->
+    <nav>
+      <div class="subMeues container">
+        <div class="subMeue d-flex justify-content-around">
+          <div class="MenueVehicles">
+            <h6>Vehicles</h6>
+            <div class="Vehiclescontent">
+              <ul>
+                <div class="first-sub-v d-flex justify-content-between">
+                  <div>
+                    <li><a class="brand-visible" href="#">Cars for Sale</a></li>
+                  </div>
+                  <div><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+                <li><a href="#">Cars for Rent</a></li>
+                <li><a href="#">Tyres, Batteries, Oils, & Accessories</a></li>
+                <li><a href="#">Car Spare Parts</a></li>
+                <li><a href="#">Motorcycles & Accessories</a></li>
+                <li><a href="#">Boats - Watercraft</a></li>
+                <li><a href="#">Heavy Trucks, Buses & Other Vehicles</a></li>
+              </ul>
+            </div>
+            <div class="brands-section">
+              <div class="brands-header d-flex justify-content-between">
+                <h5>Popular Brands</h5>
+                <a href="#"
+                  >See all <span><i class="fa-solid fa-angle-right"></i></span
+                ></a>
+              </div>
+              <div class="brands-car d-flex justify-content-between">
+                <div>
+                  <div><a href="">Mercedes</a></div>
+                  <div><a href="">Benz</a></div>
+                  <div><a href="">BMW</a></div>
+                  <div><a href="#">Hyundai</a></div>
+                  <div><a href="#">Kia</a></div>
+                  <div><a href="#">Renault</a></div>
+                  <div><a href="#">Skoda</a></div>
+                  <div><a href="#">Nissan</a></div>
+                  <div><a href="#">Toyota</a></div>
+                </div>
+                <div>
+                  <div><a href="#">Volkswagen</a></div>
+                  <div><a href="#">Chevrolet</a></div>
+                  <div><a href="#">MG</a></div>
+                  <div><a href="#">Opel</a></div>
+                  <div><a href="#">Peugeot</a></div>
+                  <div><a href="#">Seat</a></div>
+                  <div><a href="#">Mitsubishi</a></div>
+                  <div><a href="#">Jeep</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="properties">
+            <h6>Properties</h6>
+            <div class="prop-content">
+              <ul>
+                <li><a href="#">Apartments for Sale</a></li>
+                <li><a href="#">Apartments For Rent</a></li>
+                <li><a href="#">Villas For Rent</a></li>
+                <li><a href="#">Villas For Rent</a></li>
+                <li><a href="#">Vacation Homes for Sale</a></li>
+                <li><a href="#">Vacation Homes for Rent</a></li>
+                <li><a href="#">Commercial for Sale</a></li>
+                <li><a href="#">Commercial for Rent</a></li>
+                <li><a href="#">Buildings & Lands</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Mobiles">
+            <h6>Mobiles & Tablets</h6>
+            <div class="mobile-content">
+              <ul>
+                <li><a href="#">Mobile Phones</a></li>
+                <li><a href="#">Tablets</a></li>
+                <li><a href="#">Mobile & Tablet Accessories</a></li>
+                <li><a href="#">Mobile Numbers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="job">
+            <h6>Jobs</h6>
+            <div class="job-content d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li><a href="#">Accounting, Finance & Banking</a></li>
+                  <li><a href="#">Engineering</a></li>
+                  <li><a href="#">Designers</a></li>
+                  <li><a href="#">Customer Service & Call Center</a></li>
+                  <li><a href="#">Workers and Technicians </a></li>
+                  <li><a href="#">Management & Consulting</a></li>
+                  <li><a href="#">Drivers & Delivery</a></li>
+                  <li><a href="#"> Education </a></li>
+                  <li><a href="#">HR </a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#">Tourism, Travel & Hospitality</a></li>
+                  <li><a href="#">IT - Telecom</a></li>
+                  <li><a href="#">Marketing and Public Relations</a></li>
+                  <li><a href="#">Medical, Healthcare, & Nursing</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Secretarial</a></li>
+                  <li><a href="#"> Guards and Security</a></li>
+                  <li><a href="#">Legal - Lawyers</a></li>
+                  <li><a href="#">Other Jobs</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="Electronics">
+            <h6>Electronics & Appliances</h6>
+            <div class="Elect-content">
+              <ul>
+                <li><a href="#"> TV - Audio - Video </a></li>
+                <li><a href="#">Computers - Accessories</a></li>
+                <li><a href="#">Video games - Consoles</a></li>
+                <li><a href="#"> Cameras - Imaging</a></li>
+                <li><a href="#">Home AppliancesAppliances</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="Furniture">
+            <h6>Furniture & Decor</h6>
+            <div class="Furniture-content d-flex justify-content-between">
+              <div>
+                <ul>
+                  <li><a href="#">Bathroom</a></li>
+                  <li><a href="#">Bedroom</a></li>
+                  <li><a href="#">Dining Room</a></li>
+                  <li><a href="#">Fabrics - Curtains - Carpets</a></li>
+                  <li><a href="#">Garden - Outdoor </a></li>
+                  <li><a href="#">Home Decoration</a></li>
+                  <li><a href="#">Kitchen - Kitchenware </a></li>
+                  <li><a href="#"> Lighting Tools </a></li>
+                  <li><a href="#">Living Room </a></li>
+                </ul>
+              </div>
+              <div>
+                <ul>
+                  <li><a href="#"> Multiple/Other Furniture</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="MenueTitle">
+            <h6>
+              <span><i class="fa-solid fa-shapes"></i></span> More Categories
+            </h6>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ending the nav section with the carousel -->
+
+    <div class="container">
+      <div>
+        <ul class="links">
+          <li><a href="">Home</a></li>
+          <li><a href="">Properties</a></li>
+          <li><a href="">Villas For Sale</a></li>
+          <li><a href="">Villas For Sale in Mostakbal City</a></li>
+          <li><a href="">Villas For Sale in The Butterfly</a></li>
+        </ul>
+      </div>
+      <div class="product-ads d-flex justify-content-center mt-4">
+        <img src="./images/ads.jpg" alt="" />
+        <div class="product-x-mark">
+          <span><i class="fa-solid fa-exclamation"></i></span>
+          <span><i class="fa-solid fa-xmark"></i></span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 my-3">
+          <div class="image">
+            <img src="./images/imgpro1.jpg" alt="" />
+            <div class="image_count">
+              <i class="bi bi-camera"></i>
+              <span>See 10 Photos</span>
+            </div>
+          </div>
+          <div class="Overview my-3 p-4 border rounded-3">
+            <div class="d-flex justify-content-between">
+              <div class="price_info">
+                <h1 class="fw-bold">EGP 10,973,000</h1>
+                <span>EGP 3,291,900 Down Payment</span>
+              </div>
+              <div class="share_icon">
+                <a href=""
+                  ><i class="bi bi-share fs-4 fw-bold text-dark"></i
+                ></a>
+                <a href=""
+                  ><i class="bi bi-suit-heart fs-4 ms-3 fw-bold text-dark"></i
+                ></a>
+              </div>
+            </div>
+            <div class="my-3">
+              <p class="fs-5 w-75 fw-bold m-0">
+                For sale, a 239 sqm villa, wonderful view, at the lowest price,
+                with a down payment of 3 million, in the Butterfly Mostakbal
+                Compound.
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div>
+                <i class="bi bi-geo-alt fs-4"></i>
+                <span>The Butterfly, Mostakbal City</span>
+              </div>
+              <div>
+                <span>2 Weeks Ago</span>
+              </div>
+            </div>
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold">Highlights</h3>
+            <div class="Highlights d-flex justify-content-around my-4">
+              <div class="d-flex flex-column align-items-center">
+                <i class="fa-regular fa-building fs-3 text-danger"></i>
+                <span>Type</span>
+                <span class="fw-bold">Stand Alone Villa</span>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-key fs-3 text-danger"></i>
+                <span>Ownership</span>
+                <span class="fw-bold">Primary</span>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-border-all fs-3 text-danger"></i>
+                <span>Area (m²)</span>
+                <span class="fw-bold">239</span>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-bed fs-3 text-danger"></i>
+                <span>Bedrooms</span>
+                <span class="fw-bold">4</span>
+              </div>
+              <div class="d-flex flex-column align-items-center">
+                <i class="fa-solid fa-bath fs-3 text-danger"></i>
+                <span>Bathrooms</span>
+                <span class="fw-bold">3</span>
+              </div>
+            </div>
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold mb-3">Details</h3>
+            <div class="d-flex justify-content-between my-3">
+              <div class="row w-50 ps-3 bg-body-secondary py-2">
+                <div class="col-6">
+                  <span>Payment Option</span>
+                </div>
+                <div class="col-6">
+                  <span class="fw-bold">Cash or Installment</span>
+                </div>
+              </div>
+
+              <div class="row w-50 ps-3 bg-body-secondary py-2">
+                <div class="col-6">
+                  <span>Completion status</span>
+                </div>
+                <div class="col-6">
+                  <span class="fw-bold">Off-plan</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold mb-3">Amenities</h3>
+            <div class="d-flex justify-content-between">
+              <div class="bg-body-secondary p-2 w-50">
+                <i class="fa-solid fa-kitchen-set fs-5 me-3"></i>
+                <span class="fs-6">Built in Kitchen Appliances</span>
+              </div>
+              <div class="bg-body-secondary w-50 ms-1 p-2">
+                <i class="fa-solid fa-lock fs-5 me-3"></i>
+
+                <span class="fs-6">Private Garden</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="bg-body-secondary p-2 w-50 my-1">
+                <i class="fa-solid fa-car fs-5 me-3"></i>
+                <span class="fs-6">Covered Parking</span>
+              </div>
+              <div class="bg-body-secondary w-50 ms-1 p-2 my-1">
+                <i class="fa-solid fa-paw fs-5 me-3"></i>
+
+                <span class="fs-6">Pets Allowed</span>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between">
+              <div class="bg-body-secondary p-2 w-50">
+                <i class="fa-solid fa-recycle fs-5 me-3"></i>
+                <span class="fs-6">Electricity Meter</span>
+              </div>
+              <div class="bg-body-secondary w-50 ms-1 p-2">
+                <i class="fa-solid fa-water fs-5 me-3"></i>
+
+                <span class="fs-6">Water Meter</span>
+              </div>
+            </div>
+            <div class="my-4">
+              <span class="fs-5 text-danger fw-bold me-3">View All</span>
+              <i class="fa-solid fa-chevron-right fs-5 text-danger fw-bold"></i>
+            </div>
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold mb-3">Description</h3>
+            <p>
+              Own your villa with Misr City Company in Butterfly Compound in the
+              heart of Mostakbal City with a 42% discount for a limited period.
+            </p>
+            <p>The most distinguished plot of land in Mostaqbal City.</p>
+            <p>- THE BUTTERFLY Compound is located directly on Al Amal Axis</p>
+            - Next to my city- in Craft Zone
+            <p>- In front of Saray on the other side of Al Amal Axis</p>
+            <p>Townhouse with a distinctive subdivision</p>
+            <p>The area of ​​the villa is 239 square meters It consists of:</p>
+            <p>4 bedrooms, including a master bedroom 3 bathrooms</p>
+            <p>Reception 3 pieces || Living room</p>
+            <p>Large kitchen || Terrace with open view</p>
+            <p>Big garden Features of The Butterfly:</p>
+
+            <p>- Wide green spaces</p>
+            <p>- Bicycle paths</p>
+            <p>- Underground garage</p>
+            <p>- Commercial area</p>
+            <p>- Children's play area</p>
+            <p>Offer for a limited period from Misr City Company</p>
+            <p>
+              Benefit from a 42% discount price for a limited time +
+              installments
+            </p>
+            <p>
+              Down payment of 3,000,000 and in installments over 6 years without
+              interest
+            </p>
+            <span>For more details</span>
+            <a href="" class="fs-6">(View phone number)</a>
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3 d-flex flex-column">
+            <h3 class="fw-bold mb-3">Location</h3>
+            <div>slider</div>
+            <div>
+              <i class="bi bi-geo-alt fs-4"></i>
+              <span>The Butterfly, Mostakbal City</span>
+              <div class="Locat">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5806.726891965208!2d31.685107708161702!3d30.074119244424953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1457f5006421b0fb%3A0x35a9ce817d4c8e1b!2sThe%20Butterfly%20Compound!5e0!3m2!1sar!2seg!4v1740359679130!5m2!1sar!2seg"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <button
+                  type="button"
+                  class="btn btn-light fw-bold border-danger"
+                >
+                  <i class="bi bi-geo-alt fs-4"></i> See location
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex justify-content-between align-items-center my-4 py-3 border-bottom border-dark"
+          >
+            <span class="fs-5">Ad id 501692337</span>
+            <div class="d-flex align-items-center">
+              <i class="bi bi-flag fs-5 text-danger me-3"></i>
+              <a class="fw-bold text-dark text-decoration-none"
+                >Report This Ad</a
+              >
+            </div>
+          </div>
+          <div class="my-3 p-4 pb-0">
+            <h3 class="fw-bold">Related ads</h3>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <img src="./images/img2.jpg" alt="" class="my-3 rounded-3" />
+            <img src="./images/img3.jpg" alt="" class="mb-3 rounded-3" />
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold mb-3">Listed by agency</h3>
+            <div class="d-flex justify-content-between">
+              <div class="w-100">
+                <div class="d-flex align-items-center">
+                  <span class="fw-bold">Falcon Real Estate </span>
+                  <i class="bi bi-patch-check-fill text-info fs-4 ms-3"></i>
+                </div>
+                <div>
+                  <span>Member Since Nov 2018</span>
+                </div>
+                <div class="my-4">
+                  <span class="fs-6 text-danger fw-bold me-3">See Profile</span>
+                  <i
+                    class="fa-solid fa-chevron-right fs-6 text-danger fw-bold"
+                  ></i>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-center align-items-center w-100"
+              >
+                <img src="./images/logo.jpg" alt="" class="w-100 rounded-3" />
+              </div>
+            </div>
+            <div class="buttons">
+              <button
+                type="button"
+                class="btn bg-danger-subtle w-100 p-2 fw-bold my-2 call"
+              >
+                <i class="bi bi-telephone text-danger fs-4 me-2"></i>Show Phone
+                Number
+              </button>
+              <button
+                type="button"
+                class="btn bg-success-subtle w-100 p-2 fw-bold my-2 whatsapp"
+              >
+                <i class="bi bi-whatsapp text-success fs-4 me-2"></i>WhatsApp
+              </button>
+            </div>
+          </div>
+          <div class="my-3 p-4 pb-0 border rounded-3">
+            <h3 class="fw-bold mb-3">Your safety matters to us!</h3>
+            <ul>
+              <li>
+                Only meet in public / crowded places for example metro stations
+                and malls.
+              </li>
+              <li>
+                Never go alone to meet a buyer / seller, always take someone
+                with you.
+              </li>
+              <li>
+                Check and inspect the product properly before purchasing it.
+              </li>
+              <li>
+                Never pay anything in advance or transfer money before
+                inspecting the product.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="container border-bottom">
+        <div class="row border-secondary-subtle">
+          <div class="col pt-5">
+            <h4 class="heading-footer fw-bold">
+              Find amazing deals on the go.
+            </h4>
+            <h4 class="fw-bold SubHeading-footer">Download the app now!</h4>
+          </div>
+          <div class="col phone-img">
+            <img class="w-50" src="../images/per.png" alt="" />
+          </div>
+          <div class="col d-flex justify-content-around">
+            <a class="downapp" href="#"
+              ><img src="../images/apple.svg" alt=""
+            /></a>
+            <a class="downapp" href="#"
+              ><img src="../images/play.svg" alt=""
+            /></a>
+            <a class="downapp" href="#"
+              ><img src="../images/aap.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 border-secondary-subtle"></div>
+      <div class="container pt-3 pb-6">
+        <div class="row secFooter">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">ABOUT US</h6>
+            <ul class="list-unstyled p-0 m-0">
+              <li><a class="decorated" href="#">About Dubizzle Group</a></li>
+              <li><a class="decorated" href="#">Careers</a></li>
+              <li><a class="decorated" href="#">Contact Us</a></li>
+              <li>
+                <a class="decorated" href="#">Dubizzle for Businesses</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">DUBIZZLE</h6>
+            <ul class="list-unstyled p-0 m-0">
+              <li><a class="decorated" href="#">Blog</a></li>
+              <li><a class="decorated" href="#">Help</a></li>
+              <li><a class="decorated" href="#">Sitemap</a></li>
+              <li><a class="decorated" href="#">Terms of use</a></li>
+              <li><a class="decorated" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">COUNTRIES</h6>
+            <div class="d-flex flex-wrap justify-content-between">
+              <div class="me-3">
+                <a class="decorated" href="#">Bahrain</a>
+                <a class="decorated" href="#">Jordan</a>
+                <a class="decorated" href="#">Kuwait</a>
+                <a class="decorated" href="#">Lebanon</a>
+                <a class="decorated" href="#">Oman</a>
+              </div>
+              <div class="mx-5">
+                <a class="decorated" href="#">Qatar</a>
+                <a class="decorated" href="#">Saudi Arabia</a>
+                <a class="decorated" href="#">UAE</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <h6 class="fw-bold sec-headFooter">FOLLOW US</h6>
+            <div class="d-flex gap-2 my-3">
+              <a href="#" class="social-icon"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+              <a href="#" class="social-icon"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <div class="d-flex justify-content-between gap-2">
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/apple.svg"
+                  alt="App Store"
+              /></a>
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/play.svg"
+                  alt="Google Play"
+              /></a>
+              <a href="#"
+                ><img
+                  class="store-badge"
+                  src="../images/aap.svg"
+                  alt="App Gallery"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- endig the footer section -->
+    <!-- starting the sec-footer -->
+    <div class="copyRights text-end">
+      <span class="fw-bold">Classifieds In Egypt</span> &middot; &copy; 2025
+      Dubizzle
+    </div>
+    <!-- ending the sec-footer -->
+    <!-- endig the footer section -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+      integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

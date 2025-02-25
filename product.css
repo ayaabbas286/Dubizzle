@@ -1,0 +1,137 @@
+* {
+  margin: 0px;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.links li::before {
+  content: "/ ";
+  color: rgb(109, 109, 109);
+}
+.links li:first-child ::before {
+  content: " ";
+}
+
+.links li a {
+  text-decoration: none;
+  color: rgb(109, 109, 109);
+}
+
+.links li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.image .image_count {
+  background-color: white;
+  padding: 0px 5px;
+  border-radius: 20px;
+  position: absolute;
+  left: 86%;
+  top: 95%;
+}
+
+img:hover {
+  filter: brightness(75%);
+}
+.image .image_count span {
+  font-size: 12px;
+}
+
+/* .price_info h2{
+    font-size: 48px;
+    color: black;
+    text-decoration: none;
+} */
+.price_info span {
+  background-color: #3c4149;
+  margin-left: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+p {
+  white-space: pre-wrap;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+iframe:hover {
+  transform: scale(1.02);
+}
+
+.Locat {
+  position: relative;
+}
+
+.Locat button {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+}
+
+.call:hover {
+  background-color: #f08080;
+}
+
+.whatsapp:hover {
+  color: green;
+  background-color: #65947c;
+}
+
+li {
+  line-height: 2.5;
+}
+
+.product-ads img {
+  height: 100px;
+  width: 750px;
+}
+.product-x-mark {
+  position: relative;
+  top: 0;
+  right: 40px;
+  font-size: 14px;
+  color: #afccff;
+}
+.product-x-mark span .fa-exclamation,
+.product-x-mark span .fa-exclamation {
+  font-size: 8px;
+  position: relative;
+  border: 1px solid #afccff;
+  border-radius: 50%;
+  padding: 2px 5px;
+  margin-top: -10px;
+  color: #afccff;
+}
+.product-x-mark :hover,
+.product-x-mark {
+  cursor: pointer;
+}
