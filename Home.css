@@ -473,6 +473,7 @@ footer .containered ul li {
 }
 .card:hover {
   cursor: pointer;
+  transform: scale(1.02);
 }
 .card-img-top {
   height: 150px;
@@ -675,6 +676,11 @@ footer .containered ul li {
   cursor: pointer;
   margin-top: -10px;
   margin-bottom: 20px;
+}
+.subMeue h6 {
+  font-size: 14px !important;
+  font-weight: bold;
+  margin-left: 10px;
 }
 /* End the hoverd menu   */
 /* start ads section styling  */

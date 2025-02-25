@@ -1,0 +1,145 @@
+/*start slider*/
+.p-fixed {
+  border-bottom: 1px solid #ebebeb;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  z-index: 1000;
+  height: 90px;
+}
+.slider {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/Images/100.png);
+  background-size: cover;
+  height: 600px;
+  border-radius: 20px;
+  margin: 120px 20px 20px 20px;
+}
+.slider .intro {
+  padding-top: 150px;
+  text-align: center;
+  color: #fff;
+}
+.slider .intro h2 {
+  margin: auto;
+  font-size: 40px;
+  width: 600px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+.slider .intro h4 {
+  margin-top: 5px;
+
+  font-size: 20px;
+
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.slider h4 {
+  color: #3f3f3f;
+}
+.slider h6 {
+  color: white;
+}
+.product p {
+  color: #3f3f3f;
+}
+/*end slider*/
+.bord {
+  border-right: 1px solid #e2e1e1;
+}
+.government-height {
+  overflow: hidden;
+  height: 180px;
+}
+.test {
+  height: auto;
+}
+
+#view {
+  border: none;
+  background: none;
+  color: red;
+  font-weight: bold;
+}
+#view2 {
+  border: none;
+  background: none;
+  color: red;
+  font-weight: bold;
+}
+.government2-height {
+  overflow: hidden;
+  height: 180px;
+}
+.test2 {
+  height: auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+  line-height: 3px;
+}
+
+.lang {
+  font-family: cairo;
+}
+.section-2 {
+  margin-top: 15px;
+}
+.sell {
+  margin-top: -5px !important;
+  margin-left: 10px;
+}
+.card {
+  position: relative;
+  border: 1px solid rgba(255, 153, 0, 0.486) !important;
+  margin-bottom: 20px;
+}
+.elite {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-image: linear-gradient(#d0a23e, #e1bb6c);
+  border-radius: 2px;
+  width: 55px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 600;
+  padding: 2px 2px;
+  box-shadow: 2px 2px 5px rgb(59, 59, 59);
+}
+.elite img {
+  margin-top: -5px;
+}
+.varified {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  /* padding: 0px20px; */
+  width: 100px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
+  background-color: rgb(219, 241, 252);
+}
+.varified-img {
+  width: 20px;
+  margin-top: -5px;
+}
+.sub-logo {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+.sub-logo-img {
+  width: 100px;
+  margin-top: -5px;
+}
+footer {
+  margin-top: 60px !important;
+}
