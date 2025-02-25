@@ -61,6 +61,7 @@
 
 #view {
   border: none;
+  font-size: 14px;
   background: none;
   color: red;
   font-weight: bold;
@@ -71,6 +72,10 @@
   color: red;
   font-weight: bold;
 }
+#view2 .fa-chevron-down {
+  font-size: 12px;
+}
+
 .government2-height {
   overflow: hidden;
   height: 180px;
