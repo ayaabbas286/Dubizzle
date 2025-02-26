@@ -783,4 +783,11 @@ footer .containered ul li {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
 }
+.search-visible {
+  display: none;
+}
 /* end ads section styling */
+@media (max-width: 767px) {
+  .p-fixed {
+    height: 200px;
+  }}

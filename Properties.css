@@ -146,3 +146,17 @@ a {
 footer {
   margin-top: 60px !important;
 }
+@media (max-width: 767px) {
+  .motors a,
+  .properites a {
+    display: none;
+  }
+  .login {
+    padding: 0;
+  }
+}
+/* @media (min-width: 992px) and (max-width: 1199px) {
+  .phone-img {
+    margin-right: 100px !important;
+  }
+} */

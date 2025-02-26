@@ -180,3 +180,4 @@ li {
   width: 20px;
   margin-top: -5px;
 }
+@media (max-width: 767px) {}
